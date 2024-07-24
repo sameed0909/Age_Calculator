@@ -1,0 +1,1 @@
+An age calculator is a Web App that computes a person's age based on their date of birth and the current date. It calculates the difference between these two dates, providing the result in years, months, and sometimes days.
