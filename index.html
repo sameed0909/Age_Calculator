@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Age Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.PNG" width="130" height="70" class="d-inline-block align-top" alt="">
+    </a>
+  </nav>
+<body>
+    
+    <main>
+        <div id="main_div">
+            <div id="birthday">
+                <fieldset id="day">
+                    <legend id="d" class="title">DAY</legend>
+                    <legend id="d_error" class="error"></legend>
+                    <input type="text" placeholder="DD" id="_day">
+                </fieldset>
+                <fieldset id="month">
+                    <legend id="m" class="title">MONTH</legend>
+                    <legend id="m_error" class="error"></legend>
+                    <input type="text" placeholder="MM" id="_month">
+                </fieldset>
+                <fieldset id="year">
+                    <legend id="y" class="title">YEAR</legend>
+                    <legend id="y_error" class="error"></legend>
+                    <input type="text" placeholder="YYYY" id="_year">
+                </fieldset>
+            </div>
+
+            <div id="img-div">
+                <hr>
+                <div id="arrow">
+                    <img src="images/icon-arrow.svg" alt="An arrow facing down">
+                </div>
+            </div>
+
+            <div id="age">
+                <div id="age_years">
+                    <div class="reflect"></div>
+                    <div class="reflect"></div>
+                    <p class="value" id="age_year"></p>
+                    <h2>Years</h2>
+                </div>
+                <div id="age_months">
+                    <div class="reflect"></div>
+                    <div class="reflect"></div>
+                    <p class="value" id="age_month"></p>
+                    <h2>Month</h2>
+                </div>
+                <div id="age_days">
+                    <div class="reflect"></div>
+                    <div class="reflect"></div>
+                    <p class="value" id="age_day"></p>
+                    <h2>Days</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+/* CSS RESET */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Barlow Condensed', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 33%, 96%);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* MY STYLING */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main_div {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  border-bottom-right-radius: 120px;
+  box-shadow: 1px 1px 5px 2px hsl(0, 0%, 86%);
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(0, 1%, 44%);
+}
+
+fieldset {
+  position: relative;
+  border: 0;
+}
+
+#birthday {
+  display: flex;
+}
+
+#img-div {
+  position: relative;
+}
+
+hr {
+  color: hsl(0, 0%, 86%);
+}
+
+#arrow {
+  width: 70px;
+  height: 70px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: hsl(259, 100%, 70%);
+  box-shadow: 1px 1px 5px 2px hsl(0, 1%, 44%);
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: -30px;
+  cursor: pointer;
+}
+
+#arrow > img {
+  align-self: center;
+  justify-self: center;
+}
+
+#age {
+  font-family: 'Lobster', sans-serif;
+}
+
+.error {
+  font-size: 13px;
+  color: hsl(0, 100%, 67%);
+  position: absolute;
+  bottom: -15px;
+}
+
+.value {
+  align-self: center;
+  font-size: 55px;
+  color: hsl(259, 100%, 70%);
+  display: none;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 25px;
+  width: 100%;
+  border: 0;
+  box-shadow: 1px 1px 3px 1px hsl(0, 0%, 86%);
+  cursor: pointer;
+  color: hsl(0, 0%, 42%);
+  font-weight: 600;
+}
+
+input::placeholder {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.reflect {
+  height: 10px;
+  width: 30px;
+  border: 1px solid hsl(259, 100%, 70%);
+  background-color: hsl(259, 100%, 70%);
+  align-self: center;
+}
+
+#age > div {
+  display: flex;
+  gap: 10px;
+}
+
+h2 {
+  align-self: center;
+  font-size: 50px;
+}
+
+footer {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 730px) {
+  #main_div {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  input::placeholder {
+    font-size: 25px;
+  }
+
+  .reflect {
+    width: 25px;
+  }
+
+  .value {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  input {
+    font-size: 20px;
+  }
+
+  input::placeholder {
+    font-size: 20px;
+  }
+
+  .reflect {
+    width: 20px;
+  }
+
+  .value {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #main_div {
+    padding: 20px;
+  }
+
+  input {
+    font-size: 18px;
+  }
+  
+  input::placeholder {
+    font-size: 18px;
+  }
+
+  .reflect {
+    width: 20px;
+    height: 8px;
+  }
+
+  .value {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  #arrow {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
